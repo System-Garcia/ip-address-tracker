@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.backgroundImage {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Default background Image */
+.backgroundImage {
+    background-image: url('../assets/pattern-bg-mobile.png');
+}
+
+/* Desktop background Image */
+@media (min-width: 1024px) {
+    .backgroundImage {
+        background-image: url('../assets/pattern-bg-desktop.png');
+    }
+}
+
+
+.title {
+    margin: 1rem 0;
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: 600;
+}
