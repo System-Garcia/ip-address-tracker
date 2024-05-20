@@ -9,8 +9,8 @@ export const SearchBar = () => {
                 type="text"
                 placeholder="Search for any IP address or domain"
             />
-            <button>
-                <img src={iconArrow} alt="Search button" />
+            <button className={styles.searchButton}>
+                <img className={styles.searchIcon} src={iconArrow} alt="Search button" />
             </button>
         </div>
     )
