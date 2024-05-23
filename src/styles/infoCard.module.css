@@ -1,0 +1,14 @@
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    background-color: rgb(214, 111, 111);
+    box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.10); 
+    border-radius: 1.5rem;
+    align-items: center;
+    width: 90%;
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
