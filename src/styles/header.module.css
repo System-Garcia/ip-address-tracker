@@ -19,7 +19,7 @@
 
 /* Desktop background Image */
 @media (min-width: 1024px) {
-    .backgroundImage {
+    .headerBackgroundImage {
         background-image: url('../assets/pattern-bg-desktop.png');
     }
 }
