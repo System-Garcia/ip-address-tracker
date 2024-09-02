@@ -2,9 +2,17 @@
 .infoItem {
     display: flex;
     flex-direction: column;
-    color: #2C2C2C;
+    color: #7e7979;
     text-align: center;
+    line-height: 2.3 ;
 }
+
+@media (min-width: 1024px) {
+    .infoItem {
+        line-height: 3;
+    }
+} 
+
 
 .infoLabel {
     font-size: 1rem;
@@ -13,9 +21,21 @@
     text-transform: uppercase;
 }
 
+@media (min-width: 1024px) {
+    .infoLabel {
+        font-size: 1.2rem;
+    }
+} 
+
 .infoValue {
     color: #2C2C2C;
     font-size: 2rem;
     font-weight: 500;
     line-height: 2.4rem;
 } 
+
+@media (min-width: 1024px) {
+    .infoValue {
+        font-size: 2.6rem;
+       }
+}

@@ -1,21 +1,24 @@
 import { InfoItem } from "./InfoItem";
 import styles from '../styles/infoCard.module.css';
+import classNames from "classnames";
+import { useContext } from "react";
+import { IpInfoContext } from "../context/IpContext";
 
 interface Props {
-    ipAddress: string;
-    location: string;
-    timezone: string;
-    isp: string;
+    className?: string;
 }
 
-export const InfoCard = ({ ipAddress, location, timezone, isp }: Props) => {
+export const InfoCard = ({ className }: Props) => {
+
+    const {ip, isp, location } = useContext(IpInfoContext);
+
     return (
         <>
-            <div className={styles.infoCard}>
-                <InfoItem label="ip address" value={ipAddress} />
-                <InfoItem label="location" value={location} />
-                <InfoItem label="timezone" value={timezone} />
-                <InfoItem label="isp" value={isp} />
+            <div className={classNames(styles.infoCard, className)}>
+                <InfoItem label="ip address" value={ip || 'No result'} />
+                <InfoItem label="location" value={location.country || 'No result'} /> 
+                <InfoItem label="timezone" value={location.timezone || 'No result'} />
+                <InfoItem label="isp" value={isp || 'No result'} />
             </div>
         </>
     )

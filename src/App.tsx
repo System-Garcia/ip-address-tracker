@@ -1,4 +1,4 @@
-import './App.css'
+import styles from './styles/app.module.css';
 import { Header } from './components'
 import { InfoCard } from './components/InfoCard'
 
@@ -7,9 +7,11 @@ function App() {
 
   return (
     <>
-      <div>
-          <Header />
-          <InfoCard ipAddress ={'Prueba'} location= 'Prueba' timezone= 'Prueba' isp = 'Prueba'/>
+      <div className={styles.app}>
+        <Header />
+        <InfoCard
+          className={styles.appCustomInfoCard}
+        />
       </div>
     </>
   )
