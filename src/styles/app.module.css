@@ -1,10 +1,10 @@
 .app {
-    position: relative;
+  position: relative;
 }
 
-.appCustomInfoCard {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translateX(-50%);
+.app__custom-info-card {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
 }
