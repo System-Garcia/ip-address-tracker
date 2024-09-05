@@ -1,17 +1,17 @@
-import styles from '../styles/infoItem.module.css';
+import styles from "../styles/infoItem.module.css";
 
 interface Props {
-    label: string;
-    value: string
+  label: string;
+  value: string;
 }
 
-export const InfoItem = ({label, value}: Props) => {
+export const InfoItem = ({ label, value }: Props) => {
   return (
     <>
-        <div className={styles.infoItem}>
-            <span className={styles.infoLabel}>{label}</span>
-            <span className={styles.infoValue}>{value}</span>
-        </div>
+      <div className={styles.item}>
+        <span className={styles.item__label}>{label}</span>
+        <span className={styles.item__value}>{value}</span>
+      </div>
     </>
-  )
-}
+  );
+};
