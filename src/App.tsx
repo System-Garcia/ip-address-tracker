@@ -8,6 +8,7 @@ function App() {
       <div className={styles.app}>
         <Header />
         <InfoCard className={styles["app__custom-info-card"]} />
+        <div id={styles.app__map}></div>
       </div>
     </>
   );
